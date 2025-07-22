@@ -1,0 +1,18 @@
+#head {
+	color: blue;
+	background-color: brown;
+	font: Tahoma 2em;
+}
+
+#content {
+	width: 1000px;
+	background: url('logo.png');
+	background: #ccc;
+fontsize: 14pt}
+h1 {
+	color: red;
+	background-color: yellow;
+	font: Tahoma 2em;
+}
+
+

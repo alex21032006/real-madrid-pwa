@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- PWA мета-теги -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#FEBE10">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="RealMadrid">
+<link rel="apple-touch-icon" href="icons/icon-152x152.png">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спасибо! - FC REAL MADRID</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Real Madrid Logo" class="logo">
+        <div class="header-content">
+            <h1>FC REAL MADRID</h1>
+            <nav>
+                <a href="table.html" class="button">Статистика бомбардиров</a>
+                <a href="semenuck.html" class="button">Главная</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content-box thank-you">
+            <h2>Спасибо за ваш отзыв!</h2>
+            <p>Мы ценим ваше мнение и обязательно его рассмотрим.</p>
+            <a href="semenuck.html" class="button">Вернуться на главную</a>
+        </div>
+    </main>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful');
+        })
+        .catch(err => {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+  }
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful');
+        })
+        .catch(err => {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+  }
+</script>
+</body>
+</html>
